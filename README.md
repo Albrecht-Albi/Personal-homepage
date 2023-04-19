@@ -1,5 +1,5 @@
 ## Demo [clik on Link](https://albrecht-albi.github.io/Personal-homepage/)
-![Personal-homepage image](https://github.com/Albrecht-Albi/Personal-homepage/blob/main/public/imageApplication.png)
+![Personal-homepage image](https://github.com/Albrecht-Albi/Personal-homepage/blob/main/public/og-image.png)
 
 ## How it's working
 

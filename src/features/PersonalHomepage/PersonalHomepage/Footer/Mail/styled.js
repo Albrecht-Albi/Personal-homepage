@@ -10,7 +10,12 @@ export const MailAdress = styled.a`
     line-height: 40px;
     color: ${({ theme }) => theme.colors.textPrimary};
     text-decoration: none;
+    transition: color 0.3s;
     &:hover{
         color: ${({ theme }) => theme.colors.primary};
-    }
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-size: 20px;
+    };
 `;

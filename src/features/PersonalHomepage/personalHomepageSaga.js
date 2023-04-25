@@ -5,15 +5,15 @@ import { fetchRepositories, fetchRepositoriesError, fetchRepositoriesSuccess } f
 const loadingDelay = 2000;
 
 function* fetchRepositoriesHandler() {
-  try {
-    yield delay(loadingDelay);
-    const repositories = yield call(getRepositories);
-    yield put(fetchRepositoriesSuccess(repositories))
-  } catch (error) {
-    yield put(fetchRepositoriesError());
-  }
+    try {
+        yield delay(loadingDelay);
+        const repositories = yield call(getRepositories);
+        yield put(fetchRepositoriesSuccess(repositories))
+    } catch (error) {
+        yield put(fetchRepositoriesError());
+    }
 };
 
 export function* personalHomepageSaga() {
-  yield takeLatest(fetchRepositories.type, fetchRepositoriesHandler);
+    yield takeLatest(fetchRepositories.type, fetchRepositoriesHandler);
 };

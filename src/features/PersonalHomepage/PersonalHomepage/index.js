@@ -1,4 +1,4 @@
-import { Container } from "../../../common/styled"
+import { Container } from "../../styled"
 import Header from "./Header"
 import Skills from "./Skills";
 import { myData } from "./data";
@@ -7,16 +7,16 @@ import Footer from "./Footer";
 import ThemeSwitch from "../../../common/ThemeSwitch";
 
 const PersonalHomepage = () => {
-  return (
-    <Container>
-      <ThemeSwitch />
-      <Header />
-      <Skills title="My skillset includes 🛠️" skills={myData.currentSkills} />
-      <Skills title="What I want to learn next 🚀" skills={myData.skillsToLearn} />
-      <Portfolio />
-      <Footer />
-    </Container>
-  );
+    return (
+        <Container>
+            <ThemeSwitch />
+            <Header />
+            <Skills title="My skillset includes 🛠️" skills={myData.currentSkills} />
+            <Skills title="What I want to learn next 🚀" skills={myData.skillsToLearn} />
+            <Portfolio />
+            <Footer />
+        </Container>
+    );
 };
 
 export default PersonalHomepage;

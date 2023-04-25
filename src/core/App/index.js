@@ -5,6 +5,7 @@ import { themeDark, themeLight } from "./theme";
 import { selectIsDarkTheme } from "../../features/ThemeSwitch/themeSlice";
 import { Normalize } from "styled-normalize"
 import PersonalHomepage from "../../features/PersonalHomepage/PersonalHomepage";
+import { AppWrapper } from "../../features/PersonalHomepage/AppContainer/styled";
 
 const App = () => {
     const isDarkTheme = useSelector(selectIsDarkTheme);
@@ -12,8 +13,10 @@ const App = () => {
     return (
         <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
             <GlobalStyle />
-            <Normalize />
-            <PersonalHomepage />
+            <AppWrapper>
+                <Normalize />
+                <PersonalHomepage />
+            </AppWrapper>
         </ThemeProvider>
     );
 };

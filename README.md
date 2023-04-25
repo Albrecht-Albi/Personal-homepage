@@ -1,10 +1,6 @@
 ## Demo [clik on Link](https://albrecht-albi.github.io/Personal-homepage/)
 ![Personal-homepage image](https://github.com/Albrecht-Albi/Personal-homepage/blob/main/public/og-image.png)
 
-## How it's working
-
-![Personal Homepage gif](https://github.com/Albrecht-Albi/Personal-homepage/blob/main/public/recording.gif)
-
 ## Description:
 Personal Homepage in React.JS
 This is my Personal Homepage created in React which introduces me and my projects. 

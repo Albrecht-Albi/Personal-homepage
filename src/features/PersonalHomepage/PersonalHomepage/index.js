@@ -4,7 +4,7 @@ import Skills from "./Skills";
 import { myData } from "./data";
 import Portfolio from "./Portfolio";
 import Footer from "./Footer";
-import ThemeSwitch from "../../../common/ThemeSwitch";
+import ThemeSwitch from "../../ThemeSwitch";
 
 const PersonalHomepage = () => {
     return (

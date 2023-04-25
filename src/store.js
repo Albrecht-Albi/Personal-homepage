@@ -1,6 +1,6 @@
 import createSagaMiddleware from "@redux-saga/core";
 import { configureStore } from "@reduxjs/toolkit";
-import themeReducer from "./features/themeSlice"
+import themeReducer from "./features/ThemeSwitch/themeSlice"
 import personalHomepageReducer from "./features/PersonalHomepage/personalHomepageSlice"
 import rootSaga from "./rootSaga";
 

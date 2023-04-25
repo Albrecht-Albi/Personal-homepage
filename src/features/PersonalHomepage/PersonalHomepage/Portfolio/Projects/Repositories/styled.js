@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import α from "color-alpha";
 
 export const List = styled.ul`
     margin-top: 24px;
@@ -71,7 +72,7 @@ export const LinksValue = styled.dd`
 export const Link = styled.a`
     color: ${({ theme }) => theme.colors.primary};
     text-decoration: none;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
+    border-bottom: 1px solid ${({ theme }) => α(theme.colors.primary, 0.3)};
     padding-bottom: 1px;
     &:hover {
         border-color: unset;
